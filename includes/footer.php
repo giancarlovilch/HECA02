@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4">
-                <img src="/assets/img/logo.jpeg" alt="Gasolinera Premium XYZ" class="img-fluid mb-3">
+                <img src="/assets/img/logo.png" alt="Gasolinera Premium XYZ" class="img-fluid mb-3">
                 <p class="text-muted-footer">Excelencia en combustibles y servicio desde 1995.</p>
                 <div class="social-icons mt-4">
                     <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>

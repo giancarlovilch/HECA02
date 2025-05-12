@@ -67,6 +67,24 @@
 .lead {
     font-size: 1.25rem;
     color: #555;
+    font-weight: 400;
+}
+lead-service {
+    font-size: 1.25rem;
+    color: #720000;
+    font-weight: 400;
+}
+
+.lead-contacto {
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.lead-nosotros {
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 400;
 }
 
 .mb-2 {
@@ -78,14 +96,15 @@
 
 .text-muted {
     color: #720000 !important;
+    font-weight: 400;
 }
 text-muted-footer {
     color: #ffffff !important;
 }
 
 .logo-cropped {
-    width: 150px;
-    height: 80px;
+    width: auto;
+    height: 50px;
     object-fit: cover;
     object-position: center;
 }
@@ -136,4 +155,76 @@ text-muted-footer {
 
 .bg-gris  {
     background-color: #720000;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-service {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(114, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.bg-morado {
+    background-color: rgba(114, 0, 0, 0.1);
+}
+
+.card.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+#contactForm .form-control, 
+#contactForm .form-select {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+#contactForm .form-control:focus, 
+#contactForm .form-select:focus {
+    border-color: #720000;
+    box-shadow: 0 0 0 0.25rem rgba(114, 0, 0, 0.25);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(114, 0, 0, 0.05);
+    color: #720000;
+    font-weight: 500;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(114, 0, 0, 0.25);
+    border-color: #720000;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 300px;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
 }
