@@ -1,0 +1,94 @@
+// Variables
+$store-primary: #720000;
+$store-secondary: #2c3e50;
+$promo-colors: (
+    "descuento": #28a745,
+    "combo": #ffc107,
+    "oferta": #dc3545
+);
+
+// Mixins
+@mixin product-card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Store Styles
+.store-hero {
+    background: linear-gradient(45deg, darken($store-primary, 10%), $store-primary);
+}
+
+.product-grid {
+    background-color: lighten($store-secondary, 75%);
+    
+    .product-card {
+        @include product-card-hover;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        
+        &__image {
+            height: 200px;
+            background: #f8f9fa;
+            position: relative;
+            
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        
+        .promo-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 40px;
+            color: #dc3545;
+            font-weight: 700;
+            z-index: 2;
+            
+            @each $type, $color in $promo-colors {
+                &--#{$type} {
+                    background: $color;
+                    color: color-contrast($color);
+                }
+            }
+        }
+        
+        .stock-status {
+            font-size: 0.9rem;
+            i { margin-right: 0.5rem; }
+        }
+        
+        .add-to-cart {
+            transition: all 0.3s ease;
+            
+            &:disabled {
+                opacity: 0.65;
+                cursor: not-allowed;
+            }
+            
+            &:not(:disabled):hover {
+                background: darken($store-primary, 10%);
+                transform: scale(1.05);
+            }
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .product-card {
+            margin-bottom: 1.5rem;
+            
+            &__image {
+                height: 150px;
+            }
+        }
+    }
+}

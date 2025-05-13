@@ -26,6 +26,16 @@
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- ... -->
+    <?php
+    // Carga CSS según página
+    if (basename($_SERVER['PHP_SELF']) == 'precios.php') {
+        echo '<link rel="stylesheet" href="assets/less/precios.css">';
+    } elseif (basename($_SERVER['PHP_SELF']) == 'tienda.php') {
+        echo '<link rel="stylesheet" href="assets/scss/tienda.css">';
+    }
+    ?>
 </head>
 
 <body>
@@ -41,22 +51,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.php">Inicio</a>
+                            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '' ?>" href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="servicios.php">Servicios</a>
+                            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'servicios.php' ? 'active' : '' ?>" href="servicios.php">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="precios.php">Precios</a>
+                            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'precios.php' ? 'active' : '' ?>" href="precios.php">Precios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tienda.php">Tienda</a>
+                            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'tienda.php' ? 'active' : '' ?>" href="tienda.php">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotros.php">Nosotros</a>
+                            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'nosotros.php' ? 'active' : '' ?>" href="nosotros.php">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.php">Contacto</a>
+                            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'contacto.php' ? 'active' : '' ?>" href="contacto.php">Contacto</a>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">

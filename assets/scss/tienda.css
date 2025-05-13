@@ -1,0 +1,76 @@
+.store-hero {
+  background: linear-gradient(45deg, #3f0000, #720000);
+}
+
+.product-grid {
+  background-color: #fdfdfe;
+}
+.product-grid .product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.product-grid .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.product-grid .product-card__image {
+  height: 200px;
+  background: #f8f9fa;
+  position: relative;
+}
+.product-grid .product-card__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.product-grid .product-card .promo-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 40px;
+  color: #dc3545;
+  font-weight: 700;
+  z-index: 2;
+}
+.product-grid .product-card .promo-badge--descuento {
+  background: #28a745;
+  color: color-contrast(#28a745);
+}
+.product-grid .product-card .promo-badge--combo {
+  background: #ffc107;
+  color: color-contrast(#ffc107);
+}
+.product-grid .product-card .promo-badge--oferta {
+  background: #dc3545;
+  color: color-contrast(#dc3545);
+}
+.product-grid .product-card .stock-status {
+  font-size: 0.9rem;
+}
+.product-grid .product-card .stock-status i {
+  margin-right: 0.5rem;
+}
+.product-grid .product-card .add-to-cart {
+  transition: all 0.3s ease;
+}
+.product-grid .product-card .add-to-cart:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+.product-grid .product-card .add-to-cart:not(:disabled):hover {
+  background: #3f0000;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .product-grid .product-card {
+    margin-bottom: 1.5rem;
+  }
+  .product-grid .product-card__image {
+    height: 150px;
+  }
+}/*# sourceMappingURL=tienda.css.map */
