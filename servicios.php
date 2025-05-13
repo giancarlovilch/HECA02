@@ -4,7 +4,6 @@ include 'includes/header.php';
 ?>
 
 <main>
-    <!-- Hero Section -->
     <section class="hero-section bg-dark text-white">
         <div class="container py-5">
             <div class="row py-5">
@@ -15,8 +14,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Servicios de Combustible -->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
@@ -75,8 +72,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Minimarket Gourmet -->
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-5">
@@ -137,8 +132,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Taller de Emergencia -->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
@@ -191,8 +184,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Llamado a la acción -->
     <section class="py-5 text-white bg-morado">
     <div class="container text-center">
         <h2 class="display-5 fw-bold mb-4">¿Necesitas ayuda en carretera?</h2>

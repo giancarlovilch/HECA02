@@ -1,8 +1,6 @@
 <?php
 $titulo = "Gasolinera Premium XYZ - Tienda";
 include 'includes/header.php';
-
-// Simulated product data (DB-ready structure)
 $productos = [
     [
         'id' => 101,
@@ -99,8 +97,6 @@ $productos = [
             </div>
         </div>
     </section>    
-
-    <!-- Product Grid -->
     <section class="product-grid py-5 bg-light">
         <div class="container">
             <div class="row g-4">

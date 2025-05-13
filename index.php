@@ -3,8 +3,7 @@ $titulo = "Gasolinera Premium XYZ - Inicio";
 include 'includes/header.php';
 ?>
 
-<main>
-    <!-- Carrusel de imágenes profesional -->
+<main>    
     <section>
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -39,9 +38,7 @@ include 'includes/header.php';
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </section>
-
-    <!-- Sección de servicios premium -->
+    </section>    
     <section class="services-section py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
@@ -94,8 +91,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Sección de precios elegante -->
     <section class="pricing-section py-5 text-white">
         <div class="container">
             <div class="text-center mb-5">
@@ -147,9 +142,7 @@ include 'includes/header.php';
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Sección de ubicación premium -->
+    </section>    
     <section class="location-section py-5">
         <div class="container">
             <div class="row align-items-center">

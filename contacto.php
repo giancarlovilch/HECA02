@@ -2,9 +2,7 @@
 $titulo = "Gasolinera Premium XYZ - Contacto";
 include 'includes/header.php';
 ?>
-
-<main>
-    <!-- Hero Section -->
+<main>    
     <section class="hero-section bg-dark text-white">
         <div class="container py-5">
             <div class="row py-5">
@@ -14,9 +12,7 @@ include 'includes/header.php';
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Información de Contacto -->
+    </section>    
     <section class="py-5">
         <div class="container">
             <div class="row g-4">                
@@ -46,8 +42,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Formulario de Contacto -->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -123,8 +117,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Mapa -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -136,8 +128,6 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
-
-    <!-- Preguntas Frecuentes -->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
