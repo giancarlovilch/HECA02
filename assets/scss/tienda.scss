@@ -1,4 +1,3 @@
-// Variables
 $store-primary: #720000;
 $store-secondary: #2c3e50;
 $promo-colors: (
@@ -7,7 +6,6 @@ $promo-colors: (
     "oferta": #dc3545
 );
 
-// Mixins
 @mixin product-card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
@@ -17,7 +15,6 @@ $promo-colors: (
     }
 }
 
-// Store Styles
 .store-hero {
     background: linear-gradient(45deg, darken($store-primary, 10%), $store-primary);
 }
